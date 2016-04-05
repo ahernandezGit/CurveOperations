@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<head>
+ <meta charset="UTF-8"> 
+<title>Problem1</title>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<script src="d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="algorithms.js"></script>
+</head>
+<body>
+<div id="bottomBar"></div>
+<div id="wrapper">
+	<div id="container">
+    	<div id="containerLeft">
+    	<canvas id="canvastag" width="800" height="600" >
+    	  
+		</canvas>
+    	</div>
+        <div id="containerRight">
+        <ul>
+            <h2>Curve representation</h2>    
+            <li><label>Original: <input type="checkbox" id="oCheck" checked="true" ></label></li>
+            <li>Douglas-Peucker: <input type="checkbox" id="DPCheck" disabled="true"><br />
+                Tolerance(0-100px): <input type="range" id="ipsolon" value="3" min="1" max="100" step="2"> </li>
+            <li>
+                CatmulRom: <input type="checkbox" id="CaCheck" disabled="true"><br />
+                Tension(0-1): <input type="range" id="tension" value="0.5" min="0.01" max="0.91" step="0.1"></li>
+            <h2>Deformation </h2>        
+            <button id='goButton' >Go</button>  <br /><br />
+            <h2>Others </h2>  
+            <button id='clearButton' >Clear</button>  
+            <button id='restartButton' >Restart</button> 
+        </ul>       
+            	   
+    	</div>
+    	<div class="borrarFloat"></div>
+    </div><!-- fin de container -->
+</div><!-- fin de wrapper -->
+<script type="text/javascript" src="eventsButons.js"></script>
+</body>
+</html>

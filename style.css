@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#bottomBar{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:30px;
+	z-index:1;
+	background-color: #000000;
+	color:#FFFFFF;
+}
+
+#wrapper
+{
+
+	width:1082px;
+	/*background-color:#6AC5CC;*/
+	min-height:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+body
+{
+	background-color:#919598;
+	margin:0px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:75%;
+	color:#3D3346;
+	margin-bottom:100px;
+	margin-top:40px;
+	
+}
+#containerLeft
+{
+	background-color:white;
+	width:800px;
+	float:left;
+	/* con float:left se
+	pega a la izquierda 
+	padding:10px;*/
+	border-color: gray;
+	color:#333;
+}
+#containerRight
+{
+	width:281px;
+	float:right;
+	padding:0px;
+	border:0px;
+	margin:0px;
+	/* con float:right se
+	pega a la derecha */
+	background-color:#0C6CD2;
+    border-left:1px solid red;
+	
+}
+#containerRight ul{
+    counter-reset: li; 
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#containerRight li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+#containerRight li:hover{
+    background: #eee;
+}
+
+.borrarFloat
+{
+	clear:both;
+}
+#container{
+background-color:#999999;
+}
+#canvastag{
+    width: 800px;
+    height:600px;
+	
+}
+.circle{
+fill:white;
+stroke-width:0.5;
+stroke:black;
+fill-opacity:0;
+}
